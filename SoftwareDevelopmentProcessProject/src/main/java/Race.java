@@ -1,10 +1,10 @@
 package main.java;
 
 public enum Race {
-    Korrigan,
-    Gnome,
-    Goblin,
-    Elf,
-    Dryad,
-    Troll
+    KORRIGAN,
+    GNOME,
+    GOBLIN,
+    ELF,
+    DRYAD,
+    TROLL
 }

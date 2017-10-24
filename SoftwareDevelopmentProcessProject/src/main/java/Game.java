@@ -54,6 +54,19 @@ public class Game {
         return true;
     }
 
+    /**
+     * Method to launch the game
+     */
+    public void Launch(){
+        while(!this.GameOver()){
+            for (Player player : this.players) {
+                if(this.GameOver())
+                    break;
+                player.Play(this);
+            }
+        }
+    }
+
     public String toString() {
         return "Game{}";
     }

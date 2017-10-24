@@ -10,4 +10,5 @@ public abstract class Card {
     // ********** SETTERS **********
 
     // ********** METHODS **********
+    public abstract void ApplyPower(Game game, Player player);
 }

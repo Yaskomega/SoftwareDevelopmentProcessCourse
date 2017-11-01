@@ -1,5 +1,6 @@
 package main.java;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -10,6 +11,8 @@ public class Player {
 
     // ********** CONSTRUCTORS **********
     public Player() {
+        this.hand = new ArrayList<Card>();
+        this.kingdom = new ArrayList<Card>();
     }
 
     // ********** GETTERS **********
@@ -42,7 +45,6 @@ public class Player {
     }
 
     public void Play(Game game){
-        // TO BE COMPLETED ...
         //Draw a card
         this.Draw(game.getDeck());
         // Choose a card from hand
@@ -85,6 +87,24 @@ public class Player {
     public Card ChooseCardFromHand(){
         // TO BE COMPLETED ...
         return null;
+    }
+
+    /**
+     * Method to know if the player has played his last card
+     * @return true if he stills has card to play, else false
+     */
+    public boolean hasHand(){
+        return !this.hand.isEmpty();
+    }
+
+    /**
+     * Method to initialize a player with the correct amount of cards
+     * @param game : the current game
+     */
+    public void Init(Game game){
+        int number_of_cards = 5;
+        for(int i = 0; i < number_of_cards ; i++)
+            this.Draw(game.getDeck());
     }
 
     public String toString() {

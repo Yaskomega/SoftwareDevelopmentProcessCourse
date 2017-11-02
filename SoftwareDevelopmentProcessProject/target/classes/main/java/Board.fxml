@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<!-- test layout -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+
+      <HBox fx:id="Player2" layoutX="370.0" layoutY="70.0" prefHeight="150.0" prefWidth="545.0">
+
+            <ImageView fx:id="P2Card1" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P2Card2" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P2Card3" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P2Card4" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P2Card5" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+      </HBox>
+      <HBox fx:id="Player1Hand" layoutX="361.0" layoutY="526.0" prefHeight="150.0" prefWidth="602.0">
+
+            <ImageView fx:id="P1Card1" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P1Card2" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P1Card3" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P1Card4" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+            <ImageView fx:id="P1Card5" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+
+      </HBox>
+      <Pane fx:id="Deck" layoutX="47.0" layoutY="253.0" prefHeight="150.0" prefWidth="120.0">
+
+            <ImageView fx:id="DeckBack" fitHeight="150.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+
+                  <Image url="@../resources/CardBack.png" />
+
+            </ImageView>
+
+      </Pane>
+</AnchorPane>

@@ -18,9 +18,9 @@ public class Troll extends Card {
         //swap the cards in front of you with the cards in front of your opponent
         List<Card> swap = new ArrayList<Card>();
         // Store the kingdom of the 1st player in
-        swap = game.getPlayers().get(0).getKingdom();
-        game.getPlayers().get(0).setKingdom(game.getPlayers().get(1).getKingdom());
-        game.getPlayers().get(1).setKingdom(swap);
+        swap = game.getPlayer1().getKingdom();
+        game.getPlayer1().setKingdom(game.getPlayer2().getKingdom());
+        game.getPlayer2().setKingdom(swap);
     }
 
     public Race getRace()

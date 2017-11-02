@@ -14,4 +14,8 @@ public class Goblin extends Card {
     {
         //switch your hand with you opponent
     }
+    public Race getRace()
+    {
+        return Race.GOBLIN;
+    }
 }

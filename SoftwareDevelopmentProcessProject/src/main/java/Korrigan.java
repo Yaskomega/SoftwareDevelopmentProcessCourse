@@ -10,8 +10,13 @@ public class Korrigan extends Card {
     // ********** SETTERS **********
 
     // ********** METHODS **********
-    public void ApplyPower(Game game)
+    public void ApplyPower(Game game, Player player)
     {
         //draw 2 random cards within your opponent hand
+    }
+
+    public Race getRace()
+    {
+        return Race.KORRIGAN;
     }
 }

@@ -14,4 +14,8 @@ public class Gnome extends Card {
     {
         //draw 2 cards
     }
+    public Race getRace()
+    {
+        return Race.GNOME;
+    }
 }

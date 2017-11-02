@@ -14,4 +14,8 @@ public class Elf extends Card {
     {
         //copy and use the power of one of the card in front of you
     }
+    public Race getRace()
+    {
+        return Race.ELF;
+    }
 }

@@ -14,4 +14,9 @@ public class Dryad extends Card {
     {
         //stole a card in front of your opponent and add it in front of you without activating its power
     }
+
+    public Race getRace()
+    {
+        return Race.DRYAD;
+    }
 }

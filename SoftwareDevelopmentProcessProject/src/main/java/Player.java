@@ -85,7 +85,28 @@ public class Player {
      * @return the card chosen
      */
     public Card ChooseCardFromHand(){
-        // TO BE COMPLETED ...
+        // We pick a random card from the hand ...
+        Random random = new Random();
+        if(!this.hand.isEmpty()){
+            int index = random.nextInt(this.hand.size());
+            Card card = this.hand.get(index);
+            return card;
+        }
+        return null;
+    }
+
+    /**
+     * Method to make the player choose a card from the kingdom
+     * @return the card chosen
+     */
+    public Card ChooseCardFromKingdom(){
+        // We pick a random card from the hand ...
+        Random random = new Random();
+        if(!this.kingdom.isEmpty()){
+            int index = random.nextInt(this.kingdom.size());
+            Card card = this.kingdom.get(index);
+            return card;
+        }
         return null;
     }
 

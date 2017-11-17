@@ -13,6 +13,7 @@ public class Dryad extends Card {
     public void ApplyPower(Game game, Player player)
     {
         //stole a card in front of your opponent and add it in front of you without activating its power
+        game.getPlayer1().AddCardToKingdom(game.getPlayer2().getKingdom().remove(0));
     }
 
     public Race getRace()

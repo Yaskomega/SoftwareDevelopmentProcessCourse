@@ -100,7 +100,7 @@ public class Player {
      * @return the card chosen
      */
     public Card ChooseCardFromKingdom(){
-        // We pick a random card from the hand ...
+        // We pick a random card from the kingdom ...
         Random random = new Random();
         if(!this.kingdom.isEmpty()){
             int index = random.nextInt(this.kingdom.size());

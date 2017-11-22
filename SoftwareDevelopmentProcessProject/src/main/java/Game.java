@@ -2,6 +2,7 @@ package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Game {
     // ********** VARIABLES **********
@@ -72,11 +73,43 @@ public class Game {
     public void Init(){
 
         // Building the deck :
-        //TO BE COMPLETED ...
+        Random random = new Random();
+        for(int i=0; i<10; i++)
+        {
+            int index = random.nextInt(6);
+            if (index == 0) {
+                Korrigan card = new Korrigan();
+                this.deck.add(card);
+            }
+            if (index == 1) {
+                Gnome card = new Gnome();
+                this.deck.add(card);
+            }
+            if (index == 2) {
+                Goblin card = new Goblin();
+                this.deck.add(card);
+            }
+            if (index == 3) {
+                Elf card = new Elf();
+                this.deck.add(card);
+            }
+            if (index == 4) {
+                Dryad card = new Dryad();
+                this.deck.add(card);
+            }
+            if (index == 5) {
+                Troll card = new Troll();
+                this.deck.add(card);
+            }
+        }
+
+        //print the deck to test the building of the deck
+        System.out.print(this.deck.size());
+        System.out.print(this.deck);
 
         // Each player draw 5 cards :
-        this.player1.Init(this);
-        this.player2.Init(this);
+        //this.player1.Init(this);
+        //this.player2.Init(this);
     }
 
     public String toString() {

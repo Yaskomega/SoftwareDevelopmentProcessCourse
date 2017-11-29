@@ -28,8 +28,8 @@ public class Main extends Application{
 
     public static void main(String[] args) {
         //launch(args);     //open the main game window
-        //Game game = new Game();
-        //game.Init(number_of_players);
+        Game game = new Game();
+        game.Init();
         //game.Launch();
     }
 }

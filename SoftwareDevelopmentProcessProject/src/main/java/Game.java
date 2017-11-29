@@ -77,29 +77,36 @@ public class Game {
         for(int i=0; i<10; i++)
         {
             int index = random.nextInt(6);
-            if (index == 0) {
-                Korrigan card = new Korrigan();
-                this.deck.add(card);
-            }
-            if (index == 1) {
-                Gnome card = new Gnome();
-                this.deck.add(card);
-            }
-            if (index == 2) {
-                Goblin card = new Goblin();
-                this.deck.add(card);
-            }
-            if (index == 3) {
-                Elf card = new Elf();
-                this.deck.add(card);
-            }
-            if (index == 4) {
-                Dryad card = new Dryad();
-                this.deck.add(card);
-            }
-            if (index == 5) {
-                Troll card = new Troll();
-                this.deck.add(card);
+            switch (index) {
+                case 0:
+                    Korrigan card = new Korrigan();
+                    this.deck.add(card);
+                    break;
+
+                case 1:
+                    Gnome card1 = new Gnome();
+                    this.deck.add(card1);
+                    break;
+
+                case 2:
+                    Goblin card2 = new Goblin();
+                    this.deck.add(card2);
+                    break;
+
+                case 3:
+                    Elf card3 = new Elf();
+                    this.deck.add(card3);
+                    break;
+
+                case 4:
+                    Dryad card4 = new Dryad();
+                    this.deck.add(card4);
+                    break;
+
+                case 5:
+                    Troll card5 = new Troll();
+                    this.deck.add(card5);
+                    break;
             }
         }
 

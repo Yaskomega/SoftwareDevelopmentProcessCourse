@@ -115,8 +115,8 @@ public class Game {
         System.out.print(this.deck);
 
         // Each player draw 5 cards :
-        //this.player1.Init(this);
-        //this.player2.Init(this);
+        this.player1.Init(this);
+        this.player2.Init(this);
     }
 
     public String toString() {

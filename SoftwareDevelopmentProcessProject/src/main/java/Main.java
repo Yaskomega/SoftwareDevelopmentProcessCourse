@@ -30,6 +30,6 @@ public class Main extends Application{
         launch(args);     //open the main game window
         Game game = new Game();
         game.Init();
-        //game.Launch();
+        game.Launch();
     }
 }

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f7e0e5d-c6ea-4fb5-8c8f-fa3283aaa594" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GameController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareDevelopmentProcessProject.iml" afterPath="$PROJECT_DIR$/SoftwareDevelopmentProcessProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Game.java" afterPath="$PROJECT_DIR$/src/main/java/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Board.fxml" afterPath="$PROJECT_DIR$/src/main/java/Board.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/main/java/TrollTest.java" afterPath="$PROJECT_DIR$/src/test/main/java/TrollTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,8 +87,8 @@
       <file leaf-file-name="TrollTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/main/java/TrollTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+            <state relative-caret-position="345">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -538,7 +536,7 @@
       <workItem from="1509615995772" duration="1186000" />
       <workItem from="1510006616544" duration="6533000" />
       <workItem from="1511943163679" duration="4118000" />
-      <workItem from="1512549347240" duration="18000" />
+      <workItem from="1512549347240" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="Merge">
       <created>1511943519012</created>
@@ -547,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511943519012</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge">
+      <created>1512549381762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512549381762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -574,7 +579,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20467000" />
+    <option name="totallyTimeSpent" value="20566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="0" />
@@ -617,7 +622,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Yaskomega/SoftwareDevelopmentProcessCourse&#10;&#10;# Conflicts:&#10;#&#9;SoftwareDevelopmentProcessProject/src/main/java/Game.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Yaskomega/SoftwareDevelopmentProcessCourse&#10;&#10;# Conflicts:&#10;#&#9;SoftwareDevelopmentProcessProject/src/main/java/Game.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1011,8 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/main/java/TrollTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        <state relative-caret-position="345">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

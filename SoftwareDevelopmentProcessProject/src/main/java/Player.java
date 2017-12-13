@@ -90,6 +90,7 @@ public class Player {
         if(!this.hand.isEmpty()){
             int index = random.nextInt(this.hand.size());
             Card card = this.hand.get(index);
+            this.hand.remove(index);
             return card;
         }
         return null;
@@ -105,6 +106,7 @@ public class Player {
         if(!this.kingdom.isEmpty()){
             int index = random.nextInt(this.kingdom.size());
             Card card = this.kingdom.get(index);
+            this.kingdom.remove(index);
             return card;
         }
         return null;

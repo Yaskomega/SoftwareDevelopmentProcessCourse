@@ -74,7 +74,7 @@ public class Game {
 
         // Building the deck :
         Random random = new Random();
-        for(int i=0; i<10; i++)
+        for(int i=0; i<30; i++)
         {
             int index = random.nextInt(6);
             switch (index) {
@@ -111,8 +111,6 @@ public class Game {
         }
 
         //print the deck to test the building of the deck
-        System.out.print(this.deck.size());
-        System.out.print(this.deck);
 
         // Each player draw 5 cards :
         this.player1.Init(this);

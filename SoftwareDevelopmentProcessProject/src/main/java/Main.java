@@ -11,7 +11,7 @@ public class Main extends Application{
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("/main/java/Board.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Board.fxml"));
             Scene scene = new Scene(root, 1280, 720);
             primaryStage.setTitle("Test App");
             primaryStage.setScene(scene);

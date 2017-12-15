@@ -35,8 +35,8 @@ public class TrollTest {
 
     @Then("^it should have been a success$")
     public void it_should_have_been_a_success() throws Throwable {
-        //Assert.assertTrue(troll.getRace() == Race.TROLL);
-        Assert.assertFalse(true);
+        Assert.assertTrue(troll.getRace() == Race.TROLL);
+        //Assert.assertFalse(true);
     }
 //    Troll troll;
 //

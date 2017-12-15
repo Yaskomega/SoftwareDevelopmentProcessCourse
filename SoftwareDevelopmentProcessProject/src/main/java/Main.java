@@ -4,6 +4,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.net.URL;
+
 public class Main extends Application{
 
     @Override
@@ -11,7 +13,8 @@ public class Main extends Application{
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("Board.fxml"));
+            URL url = getClass().getResource("Board.fxml");
+            Parent root = FXMLLoader.load(url);
             Scene scene = new Scene(root, 1280, 720);
             primaryStage.setTitle("Test App");
             primaryStage.setScene(scene);

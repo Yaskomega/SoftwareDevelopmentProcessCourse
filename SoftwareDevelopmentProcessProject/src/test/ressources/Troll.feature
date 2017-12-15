@@ -1,4 +1,4 @@
-Feature: Features of my service
+Feature: Features of my program
 
   Scenario: Some scenario
     Given my service exists

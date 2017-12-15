@@ -1,11 +1,10 @@
-package main.java;
-
 //import org.junit.After;
 //import org.junit.Before;
 //import org.junit.Test;
 //
 //import static org.junit.Assert.*;
 
+import junit.framework.AssertionFailedError;
 import org.junit.Assert;
 
 import cucumber.api.java.en.Given;
@@ -17,8 +16,8 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(strict=true)
+//@RunWith(Cucumber.class)
+//@CucumberOptions(strict=true)
 public class TrollTest {
 
     private Troll troll;
@@ -36,7 +35,8 @@ public class TrollTest {
 
     @Then("^it should have been a success$")
     public void it_should_have_been_a_success() throws Throwable {
-        Assert.assertTrue(troll.getRace() == Race.TROLL);
+        //Assert.assertTrue(troll.getRace() == Race.TROLL);
+        Assert.assertFalse(true);
     }
 //    Troll troll;
 //

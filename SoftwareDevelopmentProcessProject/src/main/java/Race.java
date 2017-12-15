@@ -1,5 +1,3 @@
-package main.java;
-
 public enum Race {
     KORRIGAN,
     GNOME,

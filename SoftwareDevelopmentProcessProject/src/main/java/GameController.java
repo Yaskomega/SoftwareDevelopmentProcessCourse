@@ -1,5 +1,3 @@
-package main.java;
-
 import java.util.List;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;

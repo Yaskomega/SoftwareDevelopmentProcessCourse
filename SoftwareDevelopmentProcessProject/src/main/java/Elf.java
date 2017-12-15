@@ -1,5 +1,3 @@
-package main.java;
-
 public class Elf extends Card {
     // ********** VARIABLES **********
 

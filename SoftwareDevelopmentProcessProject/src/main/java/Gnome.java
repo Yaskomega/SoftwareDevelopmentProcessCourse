@@ -1,5 +1,3 @@
-package main.java;
-
 public class Gnome extends Card {
     // ********** VARIABLES **********
 

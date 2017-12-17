@@ -90,7 +90,7 @@
    <Button fx:id="btnDrawPlayer1" layoutX="554.0" layoutY="715.0" mnemonicParsing="false" onAction="#DrawCard" text="Draw Card" />
    <Button fx:id="btnDrawPlayer2" layoutX="605.0" layoutY="35.0" mnemonicParsing="false" text="Draw Card" />
    <Button fx:id="btnAddToKingdom" layoutX="658.0" layoutY="715.0" mnemonicParsing="false" onAction="#AddToKingdom" text="Add To Kingdom" />
-   <HBox alignment="CENTER" layoutX="375.0" layoutY="396.0" prefHeight="99.0" prefWidth="527.0" style="-fx-background-image: C:\Users\Ghafari Paul\Pictures\Kingdom.jpg;">
+   <HBox alignment="CENTER" layoutX="375.0" layoutY="396.0" prefHeight="99.0" prefWidth="527.0" style="-fx-background-image:url=Kingdom.jpg;">
       <children>
          <ImageView fitHeight="150.0" fitWidth="564.0">
             <image>

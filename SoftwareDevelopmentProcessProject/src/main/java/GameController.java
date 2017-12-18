@@ -12,6 +12,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 
 import java.util.ArrayList;
 
@@ -41,6 +44,17 @@ public class GameController {
             deck = game.getDeck();
             player1 = game.getPlayer1();
             player2 = game.getPlayer2();
+
+            //Pop up yugioh
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("New game");
+            alert.setHeaderText("It's time for D-D-D-D-UEL");
+            alert.setContentText("A new game has started.");
+            Image image = new Image(getClass().getResource("duel.jpg").toExternalForm());
+            ImageView imageView = new ImageView(image);
+            alert.setGraphic(imageView);
+            alert.showAndWait();
+            //End pop up yugioh
         }
         catch(Exception e){
             e.printStackTrace();

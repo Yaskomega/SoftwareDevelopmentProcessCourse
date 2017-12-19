@@ -8,17 +8,17 @@ public class Distribution {
     private Game game;
 
     @Given("^a game setter for distribution$")
-    public void my_service_exists() throws Throwable {
+    public void create_game() throws Throwable {
         game = new Game();
     }
 
     @When("^program starts for distribution$")
-    public void i_call_my_service() throws Throwable {
+    public void init_game() throws Throwable {
         game.Init();
     }
 
     @Then("^both players got 5 cards in their hand$")
-    public void it_should_have_been_a_success() throws Throwable {
+    public void check_players_hands() throws Throwable {
         Assert.assertEquals(5, game.getPlayer1().getHand().size());
         Assert.assertEquals(5, game.getPlayer2().getHand().size());
     }

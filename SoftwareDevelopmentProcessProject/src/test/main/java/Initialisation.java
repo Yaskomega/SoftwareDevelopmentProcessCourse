@@ -8,17 +8,17 @@ public class Initialisation {
     private Game game;
 
     @Given("^a game setter for initialisation$")
-    public void my_service_exists() throws Throwable {
+    public void create_game() throws Throwable {
         game = new Game();
     }
 
     @When("^program starts for initialisation$")
-    public void i_call_my_service() throws Throwable {
+    public void init_game() throws Throwable {
         game.Init();
     }
 
     @Then("^a deck is created$")
-    public void it_should_have_been_a_success() throws Throwable {
+    public void check_deck() throws Throwable {
         Assert.assertEquals(20, game.getDeck().size());
     }
 }

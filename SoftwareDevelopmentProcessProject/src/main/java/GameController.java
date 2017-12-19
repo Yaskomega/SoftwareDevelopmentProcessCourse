@@ -1,21 +1,16 @@
-import java.util.List;
-
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.stage.Stage;
-import javafx.scene.image.Image;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class GameController {
 
@@ -44,6 +39,21 @@ public class GameController {
 
     @FXML
     Button btnAddToKingdomPlayer2;
+
+    @FXML
+    HBox Kingdom1;
+
+    @FXML
+    HBox Kingdom2;
+
+    @FXML
+    HBox Player1Hand;
+
+    @FXML
+    HBox Player2Hand;
+
+    @FXML
+    ImageView P1Card1;
 
     @FXML
     TextField txtDeckCounter;
@@ -138,6 +148,13 @@ public class GameController {
                 player1.AddCardToKingdom(cardToAdd);
                 player1handSize.setValue(player1handSize.getValue() - 1);
                 player1KingdomSize.setValue(player1KingdomSize.getValue() + 1);
+                String race = cardToAdd.getRace().toString();
+                ImageView card = new ImageView(race+".png");
+                card.setFitWidth(100);
+                card.setFitHeight(150);
+                Kingdom1.setFillHeight(true);
+                Kingdom1.getChildren().add(card);
+
             }
             else{
                 Alert alert = new Alert(AlertType.CONFIRMATION, "Hand is empty !! Do you want to draw a Card ?", ButtonType.OK, ButtonType.CANCEL);
@@ -162,6 +179,12 @@ public class GameController {
                 player2.AddCardToKingdom(cardToAdd);
                 player2handSize.setValue(player2handSize.getValue() - 1);
                 player2KingdomSize.setValue(player2KingdomSize.getValue() + 1);
+                String race = cardToAdd.getRace().toString();
+                ImageView card = new ImageView(race+".png");
+                card.setFitWidth(100);
+                card.setFitHeight(150);
+                Kingdom2.setFillHeight(true);
+                Kingdom2.getChildren().add(card);
             }
             else{
                 Alert alert = new Alert(AlertType.CONFIRMATION, "Hand is empty !! Do you want to draw a Card ?", ButtonType.OK, ButtonType.CANCEL);

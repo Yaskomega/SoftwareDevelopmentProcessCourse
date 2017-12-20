@@ -108,7 +108,7 @@ public class GameController {
             Alert alert = new Alert(AlertType.INFORMATION);
             alert.setTitle("New game");
             alert.setHeaderText("It's time for duel");
-            alert.setContentText("A new game has started this is you'r hand:\n" + hand);
+            alert.setContentText("A new game has started this is your hand:\n" + hand);
             Image image = new Image(getClass().getResource("duel.jpg").toExternalForm());
             ImageView imageView = new ImageView(image);
             alert.setGraphic(imageView);

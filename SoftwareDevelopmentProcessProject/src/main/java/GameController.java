@@ -9,6 +9,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.image.Image;
 
 import java.util.List;
 
@@ -100,16 +101,21 @@ public class GameController {
             txtPlayer2kingdomCounter.textProperty().bind(Bindings.convert(player2KingdomSize));
             txtPlayer2kingdomCounter.setEditable(false);
 
-            //Pop up yugioh
-            /*Alert alert = new Alert(AlertType.INFORMATION);
+
+            String hand = String.valueOf(player1.getHand());
+            System.out.println(hand);
+            //Pop up
+            Alert alert = new Alert(AlertType.INFORMATION);
             alert.setTitle("New game");
-            alert.setHeaderText("It's time for D-D-D-D-UEL");
-            alert.setContentText("A new game has started.");
+            alert.setHeaderText("It's time for duel");
+            alert.setContentText("A new game has started this is you'r hand:\n" + hand);
             Image image = new Image(getClass().getResource("duel.jpg").toExternalForm());
             ImageView imageView = new ImageView(image);
             alert.setGraphic(imageView);
-            alert.showAndWait();*/
-            //End pop up yugioh
+            alert.showAndWait();
+            //End pop up 
+
+
         }
         catch(Exception e){
             e.printStackTrace();
